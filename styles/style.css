@@ -154,6 +154,62 @@ body{
     align-items: center;
     gap: 24px;
 }
+/* section three styles */
+
+.s3-container{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
+    gap: 1rem;
+}
+.s3-description{
+    margin-left: 100px;
+}
+.s3-description p{
+    width: 80%;
+    padding-top: 30px;
+}
+.s3-img-container img{
+    width: 80%;
+}
+.s3-img-container{
+    position: relative;
+}
+.small-img img{
+    width: 50%;
+    height: auto;
+}
+.s3-img-container .small-img {
+    position: absolute;
+    left: -85px;
+    bottom: -40px;
+}
+
+.s3-another-img-container{
+    position: relative;
+}
+.s3-another-img-container img{
+    width: 80%;
+}
+.small-img-two img{
+    width: 50%;
+    height: auto;
+}
+.small-img-two {
+    position: absolute;
+    right: -155px;
+    bottom: -45px;
+}
+.s3-another-description{
+    margin-left: 50px;
+}
+.s3-another-description p{
+    margin-top: 20px;
+}
+
 
 /* responsivness styles */
 @media screen and (max-width: 600px) {
@@ -212,5 +268,57 @@ body{
     }
     .funny-vid-grid {
         grid-template-columns: repeat(1,1fr);
+    }
+    .funny-vid-section {
+        margin-top: 50px;
+    }
+
+    /* section three responsive  */
+    .s3-container {
+        margin-top: 0px;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .s3-description {
+        margin-left: 0px;
+        text-align: center;
+    }
+    .s3-description p {
+        /* width: 80%; */
+        width: 100%;
+        padding-top: 30px;
+        margin-bottom: 30px;
+    }
+    .s3-img-container >img {
+        width: 100%;
+        max-width: 100%;
+    }
+    .small-img img {
+        width: 40%;
+    }
+    .s3-img-container .small-img {
+        position: absolute;
+        left: 0px;
+        bottom: -47px;
+    }
+    .s3-another-img-container >img {
+        width: 100%;
+        max-width: 100%;
+    }
+    .small-img-two img {
+        width: 40%;
+    }
+    .small-img-two {
+        right: -193px;
+        bottom: -56px;
+    }
+    .s3-another-description {
+        margin-left: 0px;
+        margin-top: 65px;
+        text-align: center;
+    }
+    .i4-title {
+        font-size: 1.5rem;
     }
 }
