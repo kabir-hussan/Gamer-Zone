@@ -126,10 +126,33 @@ body{
     color: transparent;
     font-size: 3rem;
     margin-bottom: 20px;
+    text-align: center;
+}
+.item-four .btn-div{
+    text-align: center;
 }
 .img-box img{
     width: 100%;
     height: 100%;
+}
+
+/* section two styles */
+.funny-vid-section{
+    margin-bottom: 50px;
+}
+.s2-title-part{
+    text-align: center;
+    line-height: 60px;
+    margin-bottom: 30px;
+}
+
+.funny-vid-grid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    gap: 24px;
 }
 
 /* responsivness styles */
@@ -176,7 +199,18 @@ body{
         padding: 12px 40px;
     }
     .i4-title {
-        text-align: center;
         font-size: 2rem;
+    }
+
+    /* funny video section responsive */
+    .s2-title-part{
+        line-height: normal;
+    }
+
+    .s2-title-part h1{
+        font-size: 2rem;
+    }
+    .funny-vid-grid {
+        grid-template-columns: repeat(1,1fr);
     }
 }
