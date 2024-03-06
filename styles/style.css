@@ -8,7 +8,7 @@
     font-family: "Work Sans", sans-serif;
 }
 
-body{
+.container{
     margin: 0px 150px;
     padding: 10px;
 }
@@ -210,10 +210,85 @@ body{
     margin-top: 20px;
 }
 
+/* footer styles */
+.footer-section{
+    margin: 0;
+    padding: 100px 300px;
+    background-color: #0B0223;
+}
+.footer-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+.footer-title .gamer-title{
+    color: white;
+    font-size: 3rem;
+    padding:10px;
+}
+
+/* footer common grid layout */
+.footer-common-grid{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+.footer-menu-list{
+    padding-top: 50px;
+}
+
+.footer-menu-list li{
+    list-style: none;
+}
+.footer-menu-list li a{
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.footer-icon-list li{
+    list-style: none;
+    color: #ffffff;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.footer-icon-list {
+    padding: 50px 190px;
+}
+.footer-option-list li{
+    list-style: none;
+}
+.footer-option-list li a{
+    text-decoration: none;
+    color: #FFFFFF99;
+    font-weight: 500;
+}
+
+.footer-option-list{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, fr);
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-copyright p{
+    color: #FFFFFF99;
+    font-weight: 500;
+    padding: 40px 120px;
+    text-align: center;
+}
 
 /* responsivness styles */
 @media screen and (max-width: 600px) {
-    body{
+    .container{
         margin:0px 30px;
     }
     .nav-bar ul{
@@ -320,5 +395,31 @@ body{
     }
     .i4-title {
         font-size: 1.5rem;
+    }
+
+    /* responsive footer */
+    .footer-section {
+        padding: 50px 0px;
+        background-color: #0B0223;
+    }
+    .footer-common-grid {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 1rem;
+    }
+    .footer-menu-list {
+        padding: 50px 30px;
+    }
+    .footer-icon-list {
+        padding: 20px 80px;
+    }
+    .footer-option-list {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, fr);
+        gap: 1rem;
+        padding: 28px 16px;
+    }
+    .footer-copyright p {
+        padding: 39px 27px;
     }
 }
